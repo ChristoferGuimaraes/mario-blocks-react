@@ -1,38 +1,66 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #5e91fe;
+  min-width: 700px;
+}
+
+.logo {
+  margin-top: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cenario-container {
+  background-image: url("https://pngimage.net/wp-content/uploads/2018/06/mario-background-png.png");
+  height: 385px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputs {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputs input {
+  width: 80px;
+  font-size: 22px;
+  border: 2px solid rgba(0, 0, 0, 0.801);
+  border-radius: 14px;
+  text-align: center;
+  outline: none;
+  padding: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.blocks-container {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  margin-bottom: 55.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  margin-top: -4px;
+}
+
+footer {
+  margin-top: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
